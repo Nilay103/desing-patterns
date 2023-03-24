@@ -1,3 +1,6 @@
+### Understand strategy patterns using sample examples ###
+
+
 class Duck:
     """parent class, contains multiple common methods
     """    
@@ -106,10 +109,10 @@ class StrategyDisplay:
     def __init__(self) -> None:
         print("StrategyDisplay Constructor Called")
 
-    def display_type_A(self):
+    def display_type_A(self) -> None:
         print("display type A")
 
-    def display_type_B(self):
+    def display_type_B(self) -> None:
         print("display type B")
 
 
@@ -117,10 +120,10 @@ class StrategyFly:
     def __init__(self) -> None:
         print("StrategyFly Constructor Called")
 
-    def fly_type_A(self):
+    def fly_type_A(self) -> None:
         print("fly type A")
     
-    def fly_type_B(self):
+    def fly_type_B(self) -> None:
         print("fly type B")
 
 
@@ -132,32 +135,32 @@ class Duck:
 
 
 class CityDuck(Duck):
-    def display(self):
+    def display(self) -> None:
         self.display_strategy.display_type_A()
 
-    def fly(self):
+    def fly(self) -> None:
         self.fly_strategy.fly_type_A()
 
 
 class VillageDuck(Duck):
-    def display(self):
+    def display(self) -> None:
         self.display_strategy.display_type_B()
 
-    def fly(self):
+    def fly(self) -> None:
         self.fly_strategy.fly_type_A()
 
 
 class WoodDuck(Duck):
-    def display(self):
+    def display(self) -> None:
         self.display_strategy.display_type_A()
 
-    def fly(self):
+    def fly(self) -> None:
         self.fly_strategy.fly_type_B()
 
 
 class PlasticDuck(Duck):
-    def display(self):
+    def display(self) -> None:
         self.display_strategy.display_type_B()
 
-    def fly(self):
+    def fly(self) -> None:
         self.fly_strategy.fly_type_B()
