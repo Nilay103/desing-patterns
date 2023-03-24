@@ -1,6 +1,5 @@
 ### Understand strategy patterns using sample examples ###
 
-
 class Duck:
     """parent class, contains multiple common methods
     """    
